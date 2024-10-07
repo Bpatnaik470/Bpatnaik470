@@ -1,0 +1,3 @@
+# Read the data set
+df = pd. read_csv('/kaggle/input/heartcsv/heart.csv')
+df
