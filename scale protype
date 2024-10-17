@@ -1,0 +1,155 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPLSCTol7iwvaSYUa7n34gH",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Bpatnaik470/Bpatnaik470/blob/main/scale%20protype\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "wirjXE1OLSS9"
+      },
+      "outputs": [],
+      "source": [
+        "# prompt: Define your scaling goals and metrics\n",
+        "\n",
+        "## Scaling Goals and Metrics\n",
+        "\n",
+        "**Goal:** To ensure our application can handle increasing user traffic and data volume without significant performance degradation.\n",
+        "\n",
+        "\n",
+        "**Metrics:**\n",
+        "\n",
+        "* **Latency:** Average response time for requests. We aim to keep it below a certain threshold (e.g., 200ms).\n",
+        "* **Throughput:** Number of requests served per second or minute. We want to maximize this while maintaining acceptable latency.\n",
+        "* **Resource Utilization:** CPU, memory, and network utilization. We aim to optimize resource usage to avoid bottlenecks.\n",
+        "* **Error Rate:** Percentage of requests that fail due to errors. We want to keep this as close to 0% as possible.\n",
+        "* **Scalability:** The ability to easily increase resources and capacity to handle increased load.\n",
+        "* **Availability:** The percentage of time the application is available to users. We aim for high availability (e.g., 99.9%).\n",
+        "* **Cost:** The cost of running the application, including infrastructure, maintenance, and operational costs. We want to optimize for cost-effectiveness.\n",
+        "\n",
+        "\n",
+        "**Specific Examples:**\n",
+        "\n",
+        "* **Goal:** Reduce average response time for user logins to under 100ms.\n",
+        "* **Goal:** Increase the number of concurrent users handled by the system from 1000 to 10000.\n",
+        "* **Goal:** Ensure the application remains available even during peak traffic hours.\n",
+        "\n",
+        "\n",
+        "These scaling goals and metrics can be tailored to the specific needs and context of your application. By defining them clearly, you can create a roadmap for scaling your application effectively and efficiently.\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# prompt:  scale your prototype\n",
+        "\n",
+        "# Placeholder for your application logic\n",
+        "def process_request(request):\n",
+        "    try:\n",
+        "        # Simulate some work being done\n",
+        "        import time\n",
+        "        time.sleep(0.1)  # Simulate a 100ms delay\n",
+        "        return \"Processed request successfully\"\n",
+        "    except Exception as e:\n",
+        "        print(f\"Error processing request: {e}\")\n",
+        "        # Implement appropriate error handling, such as logging or returning an error response\n",
+        "        return \"Error processing request\"\n",
+        "\n",
+        "# Scaling strategies (to be implemented based on specific application needs)\n",
+        "def scale_up_resources():\n",
+        "  \"\"\"Increase server resources (CPU, memory) to handle increased load.\"\"\"\n",
+        "  print(\"Scaling up resources...\")\n",
+        "\n",
+        "def distribute_load():\n",
+        "  \"\"\"Distribute incoming requests across multiple servers to reduce load on a single server.\"\"\"\n",
+        "  print(\"Distributing load across multiple servers...\")\n",
+        "\n",
+        "def use_caching():\n",
+        "  \"\"\"Cache frequently accessed data to reduce database load and improve response times.\"\"\"\n",
+        "  print(\"Using caching...\")\n",
+        "\n",
+        "def optimize_database():\n",
+        "  \"\"\"Improve database performance by using appropriate indexes and query optimization techniques.\"\"\"\n",
+        "  print(\"Optimizing database...\")\n",
+        "\n",
+        "def implement_load_balancing():\n",
+        "  \"\"\"Use a load balancer to distribute traffic evenly across multiple servers.\"\"\"\n",
+        "  print(\"Implementing load balancing...\")\n",
+        "\n",
+        "\n",
+        "# Example usage of scaling strategies\n",
+        "def handle_request(request):\n",
+        "    \"\"\"Handles an incoming request and scales resources as needed.\"\"\"\n",
+        "    if check_latency() > 200:  # Check if the latency is exceeding a threshold\n",
+        "        scale_up_resources()\n",
+        "        # Add logic to reduce latency, such as using caching, optimizing code, etc.\n",
+        "    if check_resource_utilization() > 80:  # Check if resource utilization is high\n",
+        "        distribute_load()\n",
+        "\n",
+        "    return process_request(request)\n",
+        "\n",
+        "def check_latency():\n",
+        "  \"\"\"Simulates measuring the average response time.\"\"\"\n",
+        "  return 150  # Example latency (in milliseconds)\n",
+        "\n",
+        "def check_resource_utilization():\n",
+        "  \"\"\"Simulates measuring CPU utilization.\"\"\"\n",
+        "  return 60  # Example CPU utilization (percentage)\n",
+        "\n",
+        "\n",
+        "# Example demonstrating scaling and handling requests\n",
+        "for i in range(1000):\n",
+        "  handle_request(\"Request \" + str(i))\n"
+      ],
+      "metadata": {
+        "id": "1U4ilFUxQzsW"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n"
+      ],
+      "metadata": {
+        "id": "WWoSloBgQxZ7"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "eEErk9WjQxKU"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
